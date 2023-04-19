@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background: #2c3647;
+    font-family: 'Roboto', sans-serif;
+    color: #60fc12;
+    
+}
+#gameTitle{
+    text-align: center;
+    font-size: 300%;
+}
+.game {
+    display: flex;
+    text-transform: uppercase;
+}
+.canva {
+    width: 70vw;
+    height: 70vh;
+    border: solid 2px green;
+    margin: auto;
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+}
+
+.element {
+    border: solid 1px green;
+}
+.options {
+    width: 20vw;
+    height: 70vh;
+    border: solid 2px green;
+    margin: auto;
+
+}
+.button {
+    background: none;
+    border: solid 1px green;
+    color: #60fc12;
+    width: 250px;
+    height: 50px;
+    text-transform: uppercase;
+
+}
+.button:hover {
+    background: green;
+    cursor: pointer;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 200px;
+    height: 7px;
+    background: green;
+    border-radius: 5px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #60fc12;
+
+}
+  
