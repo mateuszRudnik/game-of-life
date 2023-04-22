@@ -1,9 +1,12 @@
+:root {
+    --grid-cols: 20;
+    --grid-rows: 20;
+  }
 body {
     margin: 0;
     background: #2c3647;
     font-family: 'Roboto', sans-serif;
     color: #60fc12;
-    
 }
 #gameTitle{
     text-align: center;
@@ -19,12 +22,14 @@ body {
     border: solid 2px green;
     margin: auto;
     display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto;
+    grid-template-columns:repeat(var(--grid-cols), 1fr); 
+    grid-template-rows:repeat(var(--grid-rows), 1fr); 
 }
 
 .element {
+
     border: solid 1px green;
+    
 }
 .options {
     width: 20vw;

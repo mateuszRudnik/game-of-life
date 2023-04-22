@@ -14,18 +14,17 @@
     <h1 id="gameTitle">GAME OF LIFE</h1>
     <div class="game">
         <div class="canva">
-            <script src="JS/grid.js"></script>
         </div>
+
         <div class="options">
-            <button class="button">start</button> <br>
+            <button class="button" id="startButton" onclick="grid()">start</button> 
+            <br>
             <label for="rows">rows:</label> <br>
-            <input type="range" name="rows" id="rangeRows"value="40" min="10" max="100" step="10" oninput="rangevalue.value=value"/>
-            <output id="rangevalue">40</output> <br>
+            <input type="range" name="rows" id="rangeRows"value="40" min="10" max="100" step="10"/><br>
             <label for="rows">colums:</label> <br>
-            <input type="range" name="columns" id="rangeColumns"value="40" min="10" max="100" step="10" oninput="rangevalue.value=value"/>
-            <output id="rangevalue">40</output>
+            <input type="range" name="columns" id="rangeColumns"value="40" min="10" max="100" step="10"/>
         </div>
     </div>
-    
+    <script src="JS/grid.js"></script>
 </body>
 </html>
